@@ -6,7 +6,10 @@ import { AiOutlineArrowRight } from 'react-icons/ai';
 
 const Hero = () => {
   return (
-    <div id='home' className="flex flex-col gap-4 md:flex-row-reverse md:items-center px-6 sm:px-20 mb-10 md:mt-6 ">
+    <div
+      id="home"
+      className="flex flex-col gap-4 md:flex-row-reverse md:items-center px-6 sm:px-20 mb-10 md:mt-6 "
+    >
       <div className=" md:w-1/2  ">
         <Image
           src="/images/herofanimage.jpg"
@@ -34,7 +37,7 @@ const Hero = () => {
           className=" flex items-center gap-2 mr-auto px-4 py-2 cursor-pointer bg-yellow-400 rounded-md text-neutral-50 font-bold text-lg"
         >
           Pricing
-          <AiOutlineArrowRight className='font-bold text-2xl'/>
+          <AiOutlineArrowRight className="font-bold text-2xl" />
         </Link>
       </div>
     </div>
