@@ -1,9 +1,10 @@
 import Head from 'next/head';
-import Footer from './Footer';
+import Footer from '../Footer';
 import Header from './Header';
 import { Inter } from '@next/font/google';
+import { Nunito } from '@next/font/google';
 
-const inter = Inter({ subsets: ['latin'] });
+const nunito = Nunito({ subsets: ['latin'] });
 
 const Layout = ({
   title,
@@ -18,8 +19,8 @@ const Layout = ({
 }) => {
   return (
     <div
-      className={` ${inter.className}  
-     min-h-screen flex  flex-col max-w-8xl mx-auto bg-red-300`}
+      className={` ${nunito.className}  
+     min-h-screen flex  flex-col max-w-8xl mx-auto `}
     >
       <Head>
         <title>{title ? `${title} - YourheroIPTV ` : 'YourheroIPTV'}</title>
@@ -41,7 +42,7 @@ const Layout = ({
         />
       </Head>
       <Header />
-      <div className="  flex-1 bg-blue-300 ">{children}</div>
+      <div className="  flex-1 ">{children}</div>
       <Footer />
     </div>
   );
