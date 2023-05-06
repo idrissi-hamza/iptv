@@ -27,7 +27,7 @@ const Navbar = () => {
 
 const Header = () => {
   return (
-    <div className="bg-neutral-600/70c nbg-white h-12  flex items-center md:px-20 px:6 relative transition">
+    <div className="bg-neutral-600/70c nbg-white h-16  flex items-center md:px-20 px:6 relative transition shadow-sm">
       <Logo />
       <Navbar />
     </div>
