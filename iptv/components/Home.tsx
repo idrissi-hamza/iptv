@@ -8,9 +8,9 @@ const Hero = () => {
   return (
     <div
       id="home"
-      className="flex flex-col gap-4 md:flex-row-reverse md:items-center px-6 sm:px-20 mb-10 md:mt-6 "
+      className="flex flex-col-reverse gap-4 md:flex-row-reverse md:items-center px-6 sm:px-20 mb-10 md:mt-6 mt-10 max-w-[100rem] mx-auto"
     >
-      <div className=" md:w-1/2  ">
+      <div className=" md:w-[60%]  ">
         <Image
           src="/images/herofanimage.jpg"
           alt="hero fan image"
@@ -19,8 +19,8 @@ const Hero = () => {
           height={2000}
         />
       </div>
-      <div className="flex flex-col space-y-5 md:w-1/2 ">
-        <h1 className=" text-5xl font-bold  pb-4 leading-snug ">
+      <div className="flex flex-col space-y-5 md:w-1/3 max-w-lg mr-auto ">
+        <h1 className=" text-4xl font-bold  pb-4 leading-snug ">
           The Most Powerful & <br className="hidden md:block" />
           Reliable IPTV <br className="hidden md:block" /> Subscription Service
         </h1>
