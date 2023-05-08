@@ -54,8 +54,8 @@ const Features = () => {
   ];
 
   return (
-    <section className="bg-neutral-50 p-36   flex flex-col gap-2">
-      <div className="mx-auto max-w-4xl ">
+    <section className="bg-neutral-50 py-36   flex flex-col gap-2">
+      <div className="mx-auto max-w-7xl bg-red-30 ">
         <h1 className="text-4xl font-bold text-yellow-400 text-center mb-4">
           Best Features
         </h1>
@@ -63,7 +63,7 @@ const Features = () => {
           Stream Live Matches and full seasons of exclusive series, hit movies,
           kids’ shows and much more
         </p>
-        <ul className="grid grid-cols-3 gap-10 mx-aut  self-center ">
+        <ul className="flex flex-col items-center md:items-stretch sm:grid sm:grid-cols-3 2xl:grid-cols-6 gap-10   self-center ">
           {features.map((el, id) => (
             <FeatureElement
               key={id}
