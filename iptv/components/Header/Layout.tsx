@@ -25,7 +25,7 @@ const Layout = ({
      min-h-screen flex  flex-col max-w-8xl mx-auto relative select-none`}
     >
       <Head>
-        <title>{title ? `${title} - YourheroIPTV ` : 'YourheroIPTV'}</title>
+        <title>{title ? `${title} - MOVIPTV ` : 'MOVIPTV'}</title>
         <meta
           name="description"
           content={description}
@@ -59,7 +59,7 @@ const Layout = ({
   );
 };
 Layout.defaultProps = {
-  title: 'YourheroIPTV |',
+  title: 'MOVIPTV |',
   description: 'Find your ',
   keywords: 'Movies,Series,Internet,TV,Sports,Fight',
   // TODO to custom later
