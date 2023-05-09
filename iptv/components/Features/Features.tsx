@@ -63,7 +63,7 @@ const Features = () => {
           Stream Live Matches and full seasons of exclusive series, hit movies,
           kids’ shows and much more
         </p>
-        <ul className="flex flex-col items-center md:items-stretch sm:grid sm:grid-cols-3 2xl:grid-cols-6 gap-10   self-center ">
+        <ul className="flex flex-col items-center sm:items-stretch gap-6 sm:grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-6">
           {features.map((el, id) => (
             <FeatureElement
               key={id}
