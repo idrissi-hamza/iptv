@@ -34,7 +34,8 @@ const Hero = () => {
         </div>
         <Link
           href="#"
-          className=" flex items-center gap-2 mr-auto px-4 py-2 cursor-pointer bg-yellow-400 rounded-md text-neutral-50 font-bold text-lg"
+          className=" flex items-center gap-2 mr-auto px-4 py-2 cursor-pointer bg-yellow-400 rounded-md text-neutral-50 font-bold text-lg transition duration-300 ease-in-out  hover:shadow-md hover:scale-105 active:scale-100"
+          // style={{ borderRadius: '24% 72% 12% 92% / 62% 67% 34% 32%' }}
         >
           Pricing
           <AiOutlineArrowRight className="font-bold text-2xl" />

@@ -4,8 +4,6 @@ import { useState, useEffect } from 'react';
 function Carousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-
-
   const logos = [
     { image: 'amazon-prime.jpg' },
     { image: 'bbc-canada.png' },
@@ -40,32 +38,30 @@ function Carousel() {
   const styleWidth = 'w-40';
 
   return (
-    <div className="mx-10 relative">
+    <div className="w-full overflow-hidden max-w-8xl bg-white  mx-auto px-10 relative">
       <div className="absolute top-0 right-0 bg-gradient-to-l from-white h-full w-1/12 z-10" />
       <div className="absolute top-0 left-0 bg-gradient-to-r from-white h-full w-1/12 z-10" />
-      <div className="w-full overflow-hidden max-w-7xl bg-white px-10">
 
-        <ul
-          className="flex items-center justify-center gap-2 list-none transition duration-300 ease-in-out"
-          style={{ transform: `translateX(-${currentIndex * elementWidth}px)` }}
-        >
-          {seats.map((logo, index) => (
-            <li
-              key={index}
-              // element width
-              className={`flex-shrink-0 w-40  ${styleWidth}`}
-            >
-              <Image
-                src={`/images/logos/${logo.image}`}
-                alt={logo.image}
-                // fill
-                width={200}
-                height={200}
-              />
-            </li>
-          ))}
-        </ul>
-      </div>
+      <ul
+        className="flex items-center justify-center gap-2 list-none transition duration-300 ease-in-out"
+        style={{ transform: `translateX(-${currentIndex * elementWidth}px)` }}
+      >
+        {seats.map((logo, index) => (
+          <li
+            key={index}
+            // element width
+            className={`flex-shrink-0 w-40  ${styleWidth}`}
+          >
+            <Image
+              src={`/images/logos/${logo.image}`}
+              alt={logo.image}
+              // fill
+              width={200}
+              height={200}
+            />
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }
