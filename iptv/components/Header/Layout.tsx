@@ -3,6 +3,8 @@ import Footer from '../Footer';
 import Header from './Header';
 import { Inter } from '@next/font/google';
 import { Nunito } from '@next/font/google';
+import Image from 'next/image';
+import Navbar from './Navbar';
 
 const nunito = Nunito({ subsets: ['latin'] });
 
@@ -20,7 +22,7 @@ const Layout = ({
   return (
     <div
       className={` ${nunito.className}  
-     min-h-screen flex  flex-col max-w-8xl mx-auto `}
+     min-h-screen flex  flex-col max-w-8xl mx-auto relative select-none`}
     >
       <Head>
         <title>{title ? `${title} - YourheroIPTV ` : 'YourheroIPTV'}</title>
@@ -41,9 +43,18 @@ const Layout = ({
           href="/favicon.ico"
         />
       </Head>
-      <Header />
+      {/* <Header /> */}
+      <Navbar/>
       <div className="  flex-1 ">{children}</div>
       <Footer />
+      <Image
+        src="/images/footer.png"
+        alt="plans bg image"
+        // fill
+        className="absolute bottom-0 -z-10"
+        width={3000}
+        height={3000}
+      />
     </div>
   );
 };
