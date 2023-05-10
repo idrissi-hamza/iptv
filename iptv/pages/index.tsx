@@ -1,5 +1,7 @@
 import { Inter } from '@next/font/google';
 import Carousel from 'components/Channels';
+import Contact from 'components/Contact';
+import FAQSection from 'components/FaqSection';
 import Features from 'components/Features/Features';
 import Layout from 'components/Header/Layout';
 import Hero from 'components/Home';
@@ -17,6 +19,8 @@ export default function Home() {
         <Carousel />
         <Reasons />
         <PlansSection />
+        {/* <FAQSection/> */}
+        {/* <Contact /> */}
       </>
     </Layout>
   );
