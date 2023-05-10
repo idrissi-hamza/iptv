@@ -7,7 +7,7 @@ import { GiReceiveMoney } from 'react-icons/gi';
 
 const FeatureElement = ({ title, description, Icon }) => {
   return (
-    <li className="p-4 pb-6 shadow-xl shadow-yellow-400/20 max-w-[12rem] flex flex-col items-center gap-2 border border-yellow-200/40 hover:shadow-2xl hover:shadow-yellow-200 cursor-pointer bg-yellow-100/20 hover:scale-105  transition  rounded-md">
+    <li className="p-4 pb-6 shadow-md shadow-yellow-400/20 max-w-[12rem] flex flex-col items-center gap-2 border border-yellow-200/40 hover:shadow-lg hover:shadow-yellow-200 cursor-pointer bg-yellow-100/20 hover:scale-105  transition  rounded-md">
       <Icon className="text-5xl text-yellow-500" />
       <h3 className="font-bold text-xl text-center pb-4"> {title}</h3>
       <p className="text-sm text-neutral-600 font-semibold">{description}</p>
@@ -54,7 +54,7 @@ const Features = () => {
   ];
 
   return (
-    <section className="bg-neutral-50 py-36   flex flex-col gap-2">
+    <section id='features' className="bg-neutral-50 pt-16 pb-36   flex flex-col gap-2">
       <div className="mx-auto max-w-7xl bg-red-30 ">
         <h1 className="text-4xl font-bold text-yellow-400 text-center mb-4">
           Best Features
@@ -63,7 +63,8 @@ const Features = () => {
           Stream Live Matches and full seasons of exclusive series, hit movies,
           kids’ shows and much more
         </p>
-        <ul className="flex flex-col items-center sm:items-stretch gap-6 sm:grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-6">
+        
+        <ul className="flex flex-col items-center sm:items-stretch gap-4 xl:gap-x-8  sm:grid sm:grid-cols-2 md:grid-cols-3 2xl:grid-cols-6  ">
           {features.map((el, id) => (
             <FeatureElement
               key={id}
