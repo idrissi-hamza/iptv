@@ -22,6 +22,7 @@ const Contact = () => {
 
   const sendEmail = (e: any) => {
     e.preventDefault();
+    console.log(process.env.EMAILJS_SERVICE_ID);
     // console.log(Object.values(values));
     // Validation
     const hasEmptyFields = Object.values(values).some(
@@ -48,13 +49,12 @@ const Contact = () => {
             console.log(result.text);
             // setDone(true);
             toast.success('Thanks for Contacting me');
-          
+
             // form.reset();
             setValues({ name: '', email: '', message: '' });
           },
           (error) => {
             toast.error(error.text);
-          
           }
         );
   };

@@ -20,7 +20,7 @@ export default function Home() {
         <Reasons />
         <PlansSection />
         {/* <FAQSection/> */}
-        {/* <Contact /> */}
+        <Contact />
       </>
     </Layout>
   );
