@@ -28,7 +28,7 @@ const plansContent: Plan[] = [
 
 const PlansSection = () => {
   return (
-    <section className=" min-h-screen py-10 ">
+    <section id='pricing' className=" min-h-screen py-10 ">
       <div className='mx-4'>
         <h1 className="text-center font-bold text-3xl">
           Choose your IPTV Plan!
