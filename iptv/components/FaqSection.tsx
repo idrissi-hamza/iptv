@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 function FAQSection() {
-  const [activeIndex, setActiveIndex] = useState(null);
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const questions = [
     {
       id: 1,
@@ -21,7 +21,7 @@ function FAQSection() {
       answer:
         'We offer a wide range of channels, including sports, movies, news, and entertainment, as well as international channels from different countries.',
     },
-  
+
     {
       id: 5,
       question: 'Do I need special equipment to use IPTV?',
@@ -31,8 +31,7 @@ function FAQSection() {
     {
       id: 6,
       question: 'How much does IPTV cost?',
-      answer:
-        'The cost of IPTV varies depending on the Plan you choose.',
+      answer: 'The cost of IPTV varies depending on the Plan you choose.',
     },
     {
       id: 7,
@@ -50,7 +49,7 @@ function FAQSection() {
       id: 9,
       question: 'What kind of customer support is available for IPTV users?',
       answer:
-        "We offer 24/7 support, our support is  through email or chat. we a  good customer support we ensure that any issues or questions can be resolved quickly and efficiently.",
+        'We offer 24/7 support, our support is  through email or chat. we a  good customer support we ensure that any issues or questions can be resolved quickly and efficiently.',
     },
     {
       id: 10,
@@ -61,7 +60,7 @@ function FAQSection() {
     },
   ];
 
-  const handleQuestionClick = (index) => {
+  const handleQuestionClick = (index: number | null) => {
     if (index === activeIndex) {
       setActiveIndex(null);
     } else {
@@ -71,7 +70,9 @@ function FAQSection() {
 
   return (
     <div className="max-w-4xl mx-auto">
-      <h2 className="text-3xl font-bold mb-10 text-center">Frequently Asked Questions</h2>
+      <h2 className="text-3xl font-bold mb-10 text-center">
+        Frequently Asked Questions
+      </h2>
       {questions.map((q, index) => (
         <div
           key={q.id}

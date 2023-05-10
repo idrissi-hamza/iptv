@@ -4,8 +4,14 @@ import { MdOndemandVideo, MdOutlineImportantDevices } from 'react-icons/md';
 import { ImConnection } from 'react-icons/im';
 import { BiSupport } from 'react-icons/bi';
 import { GiReceiveMoney } from 'react-icons/gi';
+import { IconType } from 'react-icons/lib';
 
-const FeatureElement = ({ title, description, Icon }) => {
+type FeatureElementType = {
+  title: string;
+  description: string;
+  Icon: IconType;
+};
+const FeatureElement = ({ title, description, Icon }: FeatureElementType) => {
   return (
     <li className="p-4 pb-6 shadow-md shadow-yellow-400/20 max-w-[12rem] flex flex-col items-center gap-2 border border-yellow-200/40 hover:shadow-lg hover:shadow-yellow-200 cursor-pointer bg-yellow-100/20 hover:scale-105  transition  rounded-md">
       <Icon className="text-5xl text-yellow-500" />
@@ -54,7 +60,10 @@ const Features = () => {
   ];
 
   return (
-    <section id='features' className="bg-neutral-50 pt-16 pb-36   flex flex-col gap-2">
+    <section
+      id="features"
+      className="bg-neutral-50 pt-16 pb-36   flex flex-col gap-2"
+    >
       <div className="mx-auto max-w-7xl bg-red-30 ">
         <h1 className="text-4xl font-bold text-yellow-400 text-center mb-4">
           Best Features
@@ -63,7 +72,7 @@ const Features = () => {
           Stream Live Matches and full seasons of exclusive series, hit movies,
           kids’ shows and much more
         </p>
-        
+
         <ul className="flex flex-col items-center sm:items-stretch gap-4 xl:gap-x-8  sm:grid sm:grid-cols-2 md:grid-cols-3 2xl:grid-cols-6  ">
           {features.map((el, id) => (
             <FeatureElement
