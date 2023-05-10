@@ -85,7 +85,7 @@ const Reasons = () => {
             'watch major competitons',
             'The best wildlife, news and kids channels',
             'Latest movies and TV series in the BiWorld.',
-            'Full Hd,HD, 4k Channels',
+            'Full HD, HD, 4K Channels.',
             '100% Satisfaction guarantee.',
           ].map((item, i) => (
             <li
