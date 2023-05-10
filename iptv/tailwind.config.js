@@ -28,7 +28,7 @@ module.exports = {
 
       animation: {
         'trans-right': 'trans-right 3s ease-in-out infinite',
-        'rotate': 'rotate 5s ease-in-out infinite',
+        'rotate': 'rotate 9s ease-in-out infinite',
         'fade-in': 'fade-in 0.5s ease-in-out ',
         'fade-out': 'fade-out .5s ease-in-out ',
       },
