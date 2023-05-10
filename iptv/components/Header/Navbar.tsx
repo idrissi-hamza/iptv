@@ -6,11 +6,12 @@ import { motion } from 'framer-motion';
 // const Navbar = () => {
 //   //links nav bar
 const navLinks = [
-  { id: '1', link: '#home', title: 'Home' },
-  { id: '2', link: '#trial', title: '7-day Trial' },
-  { id: '3', link: '#featues', title: 'Features' },
-  { id: '4', link: '#contact', title: 'Contact Us' },
-  { id: '4', link: '#pricing', title: 'Pricing' },
+  { id: '1', link: '/#home', title: 'Home' },
+
+  { id: '3', link: '/#features', title: 'Features' },
+  { id: '4', link: '/#pricing', title: 'Pricing' },
+  { id: '5', link: '/#contact', title: 'Contact Us' },
+  { id: '6', link: '/faq', title: 'FAQ' },
 ];
 
 const Navbar = () => {
@@ -21,7 +22,7 @@ const Navbar = () => {
     });
   };
   return (
-    <nav className="bg-white  w-full z-20 top-0 left-0 border-b border-gray-200 mb-10">
+    <nav className="bg-white  w-full z-20 top-0 left-0 border-b border-gray-200 mb-10 sticky">
       <div className="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Logo />
         <div className="flex md:order-2">
